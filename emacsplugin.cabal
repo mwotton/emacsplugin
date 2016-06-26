@@ -22,7 +22,6 @@ executable emacsplugin.so
   ghc-options:         -no-hs-main -fPIC -shared -dynamic
   C-sources:           cbits/emacs_plugin.c
   build-depends:       base
-                     , call-haskell-from-anything
   default-language:    Haskell2010
 
 
