@@ -17,6 +17,8 @@ extra-include-dirs:
   ```
 
 This will let ghc find the all-important emacs-module.h.
+(There are some other important settings in stack.yaml, like the one to enable -fPIC
+on a stack-wide basis.)
 
 ```
 stack install --local-bin-path=SOMEDIRECTORY
@@ -38,3 +40,15 @@ We then evaluate
 in a lisp buffer: mymod-test should return the result of multiplying
 12 by 2 in Haskell. Not earthshattering, admittedly, but I'm currently
 working on how to do marshalling.
+
+Thanks
+======
+
+While I didn't end up using his code for marshalling, Niklas Hambüchen's
+[call-haskell-from-anything](https://github.com/nh2/call-haskell-from-anything)
+was extremely useful in working out how to build a .so file in
+Haskell.
+
+Thanks also to Aurélien Aptel for his explanation of the new [emacs
+module system](http://diobla.info/blog-archive/modules-tut.html) and
+how to call it from C.
