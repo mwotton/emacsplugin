@@ -1,6 +1,13 @@
 emacs 25 plugins for haskell
 =========================
 
+UPDATE
+======
+
+pretty much obsoleted by https://github.com/knupfer/haskell-emacs
+left up in case i want to mine it for code later.
+
+
 this is intended as a prototype (my ultimate goal is to hook up
 http://github.com/mwotton/dustme up to elisp), but I'll leave this
 here as a minimal example of how to call haskell from emacs.
